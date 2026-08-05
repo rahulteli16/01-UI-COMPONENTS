@@ -10,6 +10,7 @@ import Box from './Components/box.jsx'
 import Pronavbar from './Components/pronavbar.jsx'
 import Transition from './Components/transition.jsx'
 import Selfnavbar from './Components/selfnavbar.jsx'
+import Megamenu from './megamenu.jsx'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <> 
-    {/* <Navbar/> */}
+    <Navbar/> 
     {/* <Reletive/> */}
     {/* <Bell/> */}
     {/* <Login/> */}
@@ -26,7 +27,9 @@ function App() {
     {/* <Box/> */}
     {/* <Transition/> */}
     {/* <Pronavbar/> */}
-    <Selfnavbar/>
+    {/* <Selfnavbar/> */}
+    {/* <Megamenu/> */}
+
     </>
   )
 }

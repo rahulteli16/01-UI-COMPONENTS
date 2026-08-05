@@ -17,7 +17,7 @@ const Pronavbar = () => {
 
                         <div className='relative group'>
                             <a className='hover:text-white'>SERVICE</a>
-                            <div className='absolute top-full mt-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-1000 ease-in-out z-50 -translate-y-5 hover:translate-y-0 '>
+                            <div className='absolute top-full mt-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-1000 ease-in-out z-50 -translate-y-5 hover:translate-y-0  '>
 
                                 <ul className='bg-fuchsia-300 border-2  rounded-xl w-120 p-5  text-shadow-lg space-y-3'>
                                     <li className='border-2 rounded-3xl p-5 hover:bg-fuchsia-800'>
