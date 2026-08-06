@@ -11,6 +11,8 @@ import Pronavbar from './Components/pronavbar.jsx'
 import Transition from './Components/transition.jsx'
 import Selfnavbar from './Components/selfnavbar.jsx'
 import Megamenu from './megamenu.jsx'
+import Responsive from './responsive.jsx'
+import Selfmegamenu from './selfmegamenu.jsx'
 
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
 
   return (
     <> 
-    <Navbar/> 
+    {/* <Navbar/>     */}
     {/* <Reletive/> */}
     {/* <Bell/> */}
     {/* <Login/> */}
@@ -29,7 +31,8 @@ function App() {
     {/* <Pronavbar/> */}
     {/* <Selfnavbar/> */}
     {/* <Megamenu/> */}
-
+    <Responsive/>         
+    {/* <Selfmegamenu/> */}
     </>
   )
 }
