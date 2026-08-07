@@ -30,9 +30,9 @@ function App() {
     {/* <Transition/> */}
     {/* <Pronavbar/> */}
     {/* <Selfnavbar/> */}
-    {/* <Megamenu/> */}
-    <Responsive/>         
-    {/* <Selfmegamenu/> */}
+    {/* <Megamenu/>/ */}
+    {/* <Responsive/>          */}
+    <Selfmegamenu/>
     </>
   )
 }
