@@ -9,8 +9,8 @@ const Selfmegamenu = () => {
 
 
     return (
-
-        <div className='bg-black text-white flex justify-between px-3 py-4'>
+     <>
+        <div className='bg-black  text-white flex justify-between px-3 py-4'>
             <div className='flex items-center gap-3' >
                 <img src="src/assets/orange.png" className='w-10 h-10 rounded-full  hover:text-amber-600'></img>
                 <div className='hover:text-amber-600'>
@@ -54,10 +54,7 @@ const Selfmegamenu = () => {
                             <a href="#">TEXT</a>
                         </div>
                     </div>
-                </div>
-
-
-
+                </div> 
 
 
                 <a className='hover:text-amber-600'>About</a>
@@ -73,70 +70,49 @@ const Selfmegamenu = () => {
             </div>
 
 
-            <div className='flex items-center p-5 lg:hidden'>
-                <Menu className='size-8 cursor-pointer hover:text-orange-300 transition duration-300'
-                    onClick={() => setIsmenuOpen(!ismenuOpen)} />
+            <div className='flex z-50 items-center p-5 lg:hidden'>
+                <Menu className='fixed top-0 right-0 m-5 size-8 cursor-pointer hover:text-orange-300 transition duration-300'
+                    onClick={() => setIsmenuOpen(!ismenuOpen)}/>
             </div>
+    </div>
 
 
 
-            {/* Mobile Menu */}
-            {
-                ismenuOpen && (
-                    <div className="lg:hidden bg-black text-white px-5 py-4 space-y-4">
 
-                        <a href="#" className="block hover:text-orange-400">
-                            Home
-                        </a>
 
-                        <div className="space-y-2">
-                            <h2 className="text-orange-400 font-bold">
-                                Services
-                            </h2>
+{/* mobile view  */}
+{ 
+    ismenuOpen &&  (
+            <div className='lg:hidden flex flex-col gap-7 overflow-x-hidden'>
+                <div className='flex flex-col gap-8 text-amber-600'>
+                    
+    <a href="#">HOME</a>
 
-                            <div className="pl-4 space-y-2">
-                                <a href="#" className="block">Frontend</a>
-                                <a href="#" className="block">Backend</a>
-                                <a href="#" className="block">MERN</a>
-
-                                <a href="#" className="block">ML</a>
-                                <a href="#" className="block">Python</a>
-
-                                <a href="#" className="block">UI/UX</a>
-                                <a href="#" className="block">Figma</a>
-                                <a href="#" className="block">Canva</a>
-                            </div>
-                        </div>
-
-                        <a href="#" className="block hover:text-orange-400">
-                            About
-                        </a>
-
-                        <a href="#" className="block hover:text-orange-400">
-                            Blog
-                        </a>
-
-                        <a href="#" className="block hover:text-orange-400">
-                            Shop
-                        </a>
-
-                        <a href="#" className="block hover:text-orange-400">
-                            Contact
-                        </a>
-
-                        <div className="flex gap-3 pt-4">
-                            <button className="border border-orange-500 px-4 py-2 rounded-xl">
-                                Sign Up
-                            </button>
-
-                            <button className="border border-orange-500 px-4 py-2 rounded-xl">
-                                Sign In
-                            </button>
-                        </div>
-
+                    <div className='relative group'> 
+                    <a href="#">SERVICE</a>
+                    <div className='absolute flex flex-col gap-1 text-black bg-amber-200 border-2 border-amber-600  rounded-2xl p-3 mt-2 invisible group-hover:visible  opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out -translate-x-2 group-hover:translate-x-20'>
+                        <h3 className='hover:text-amber-800'>DEVELOPMENT</h3>
+                        <h3 className='hover:text-amber-800'>AI & DATA</h3>
+                        <h3 className='hover:text-amber-800'>DESIGN</h3>
+                        <h3 className='hover:text-amber-800'>FEATURED</h3>
                     </div>
-                )
-            } </div>
+                    </div>
+                    
+                    <a href="#">ABOUT</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">SHOP</a>
+                    <a href="#">CONTACT</a>
+                </div>
+
+                <div className='flex flex-col gap-4'>
+                    <button className='text-black border-2 border-amber-600 rounded-2xl px-4'>Sign up</button>
+                    <button className='text-black border-2 border-amber-600 rounded-2xl px-4'>Sign in</button>
+                </div>
+            </div>
+    )}
+            </>
+
+)}
 
 
 
@@ -145,8 +121,5 @@ const Selfmegamenu = () => {
 
 
 
-
-    )
-}
 
 export default Selfmegamenu
