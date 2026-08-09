@@ -106,7 +106,7 @@ const Selfmegamenu = () => {
 
                         <div className='flex flex-col gap-4 items-center'>
                             <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30  '>Sign up</button>
-                            <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30'>Sign in</button>
+                            <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30'>Sign in</button>  
                         </div>
                     </div>
                 )}

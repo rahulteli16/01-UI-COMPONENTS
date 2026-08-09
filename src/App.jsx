@@ -13,6 +13,7 @@ import Selfnavbar from './Components/selfnavbar.jsx'
 import Megamenu from './megamenu.jsx'
 import Responsive from './responsive.jsx'
 import Selfmegamenu from './selfmegamenu.jsx'
+import Loginpage from './Components/loginpage.jsx'
 
 
 function App() {
@@ -31,8 +32,9 @@ function App() {
     {/* <Pronavbar/> */}
     {/* <Selfnavbar/> */}
     {/* <Megamenu/>/ */}
-    {/* <Responsive/>          */}
-    <Selfmegamenu/>
+    {/* <Responsive/>*/}
+    {/* <Selfmegamenu/> */}
+    <Loginpage/>
     </>
   )
 }
