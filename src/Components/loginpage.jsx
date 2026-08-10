@@ -3,10 +3,10 @@ import login from "../assets/login.jpg";
 
 const Loginpage = () => {
     return (
-        <div className='flex min-h-screen  w-screen  justify-center items-center'>
+        <div className='flex min-h-screen  gap-5 w-screen  justify-center items-center'>
             {/* LEFT CONTENT */}
-           <div className='w-3/5  h-screen'>
-                <img src={login} className='w-full h-full  object-cover' />
+           <div className='w-2/3  h-screen max-lg:hidden'>
+                <img src={login} className='w-full h-full  object-cover object-center' />
             </div>
 
 
@@ -14,7 +14,7 @@ const Loginpage = () => {
 
 
             {/* RIGHT CONTENT */}
-            <div className='space-y-10  bg-white border ml-20 rounded-2xl p-10 shadow-2xl w-2/5'>
+            <div className='space-y-10  bg-white border  rounded-2xl p-8 shadow-2xl w-2/4 flex-col  justify-center items-center mr-5 max-lg:w-150 max-lg:m-5'>
                 {/* top part */}
                 <div className='space-y-3'>
                     <h1 className='text-5xl text-blue-500'>Login</h1>
@@ -41,7 +41,7 @@ const Loginpage = () => {
                     </div>
 
                     <div>
-                        <button className='bg-blue-500 hover:bg-blue-700 w-full py-1 rounded-2xl hover:scale-105 transition-all duration-300'>LOGIN</button>
+                        <button className='bg-blue-500 hover:bg-blue-700 w-full py-1 rounded-3xl hover:scale-105 transition-all duration-300'>LOGIN</button>
                     </div>
                 </div>
 
