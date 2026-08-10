@@ -3,10 +3,10 @@ import login from "../assets/login.jpg";
 
 const Loginpage = () => {
     return (
-        <div className='flex h-screen justify-center items-center space-x-80'>
+        <div className='flex min-h-screen  w-screen  justify-center items-center'>
             {/* LEFT CONTENT */}
-            <div className=''>
-                <img src={login} className='size-80'/>
+           <div className='w-3/5  h-screen'>
+                <img src={login} className='w-full h-full  object-cover' />
             </div>
 
 
@@ -14,7 +14,7 @@ const Loginpage = () => {
 
 
             {/* RIGHT CONTENT */}
-            <div className='space-y-10'>
+            <div className='space-y-10  bg-white border ml-20 rounded-2xl p-10 shadow-2xl w-2/5'>
                 {/* top part */}
                 <div className='space-y-3'>
                     <h1 className='text-5xl text-blue-500'>Login</h1>
@@ -26,12 +26,12 @@ const Loginpage = () => {
                 <div className='space-y-3'>
                     <div>
                         <h4>User Name</h4>
-                        <input type="text" placeholder='Enter your user ID' className='border-2 p-2 rounded mt-1 w-full' />
+                        <input type="text" placeholder='Enter your user ID' className='border-2 p-2 rounded mt-1 w-full focus:outline-none focus:ring-2 focus:ring-blue-300' />
                     </div>
 
                     <div>
                         <h4 className=''>Password</h4>
-                        <input type="password" placeholder='Enter your  Password' className='border-2 p-2 rounded mt-1 w-full' />
+                        <input type="password" placeholder='Enter your  Password' className='border-2 p-2 rounded mt-1 w-full focus:outline-none focus:ring-2 focus:ring-blue-300' />
                     </div>
 
 
@@ -41,7 +41,7 @@ const Loginpage = () => {
                     </div>
 
                     <div>
-                        <button className='bg-blue-500 hover:bg-blue-700 w-full py-1 rounded-2xl'>LOGIN</button>
+                        <button className='bg-blue-500 hover:bg-blue-700 w-full py-1 rounded-2xl hover:scale-105 transition-all duration-300'>LOGIN</button>
                     </div>
                 </div>
 
