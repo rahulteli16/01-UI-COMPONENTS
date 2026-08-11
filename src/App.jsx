@@ -15,6 +15,7 @@ import Responsive from './responsive.jsx'
 import Selfmegamenu from './selfmegamenu.jsx'
 import Loginpage from './Components/loginpage.jsx'
 import Screencheck from './Components/screencheck.jsx'
+import Signup from './Components/signup.jsx'
 
 
 function App() {
@@ -35,8 +36,9 @@ function App() {
     {/* <Megamenu/>/ */}
     {/* <Responsive/>*/}
     {/* <Selfmegamenu/> */}
-    <Loginpage/>
+    {/* <Loginpage/> */}
     {/* <Screencheck/> */}
+    <Signup/>
     </>
   )
 }
