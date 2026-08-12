@@ -11,7 +11,7 @@ const Selfmegamenu = () => {
 
 
     return (
-        <>  
+        <>
             <div className='bg-black  text-white flex justify-between px-3 py-4'>
                 <div className='flex items-center gap-3' >
                     <img src="src/assets/orange.png" className='w-10 h-10 rounded-full  hover:text-amber-600'></img>
@@ -92,11 +92,11 @@ const Selfmegamenu = () => {
                     <div className='lg:hidden flex flex-col gap-10 overflow-x-hidden mt-20'>
                         <div className='flex flex-col space-y-12  text-amber-600 '>
 
-                            <a href="#" className='bg-black bg-text-center  justify-center'>HOME</a>
+                            <a href="#" className="flex justify-center  w-full bg-black">HOME</a>
 
                             <div className='relative group'>
                                 <a href="#" className='bg-black block w-full text-center'>SERVICE</a>
-                                <div className='absolute flex flex-col gap-1 text-black bg-amber-200 border-2 border-amber-600  rounded-2xl p-3 mt-2 invisible group-hover:visible  opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out translate-x-50  -translate-y-8 group-hover:translate-x-75'>
+                                <div className='absolute flex flex-col gap-1 text-black bg-amber-200 border-2 border-amber-600  rounded-2xl p-3 mt-2 invisible group-hover:visible  opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out   -translate-y-7 translate-x-85 group-hover:translate-x-100'>
                                     <a className='hover:text-amber-800'>DEVELOPMENT</a>
                                     <a className='hover:text-amber-800'>AI & DATA</a>
                                     <a className='hover:text-amber-800'>DESIGN</a>
@@ -111,11 +111,14 @@ const Selfmegamenu = () => {
                         </div>
 
                         <div className='flex flex-col gap-4 items-center'>
+                            <Link to="/signup">
+                                <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30  '>Sign up</button>
+                            </Link>
 
-                            <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30  '>Sign up</button>
 
-
-                            <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30'>Sign in</button>
+                            <Link to="/login">
+                                <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30'>Sign in</button>
+                            </Link>
                         </div>
                     </div>
                 )}

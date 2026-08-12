@@ -1,21 +1,28 @@
 import React from 'react'
 import Dark from "../assets/dark.jpg"
+import Navbar from './navbar'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
     return (
-        <div className='flex min-h-screen  justify-center items-center '>
+        <div className='relative flex min-h-screen  justify-center items-center '>
+            <Link to="/navbar">
+                <button className='absolute top-8 right-10 bg-green-700 text-white px-2 rounded'>HOME</button>
+            </Link>
+
+
             {/* left part */}
             <div className='w-7/12 h-screen max-lg:hidden'>
                 <img src={Dark} alt="sign up img" className='h-full object-cover' />
             </div>
 
- 
+
 
             {/* right part */}
             <div className='w-5/12 max-lg:w-full flex flex-col space-y-10 p-10 items-center justify-center border-2 shadow-2xl rounded-2xl m-6 '>
-        <Link to="navbar">
-                <button>HOME</button>
-        </Link>
+
+
+
                 {/* top part */}
                 <div className='space-y-2'>
                     <h1 className='text-4xl text-green-700'>Create an account</h1>

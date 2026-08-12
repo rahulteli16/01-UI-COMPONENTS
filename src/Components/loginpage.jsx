@@ -1,11 +1,17 @@
 import React from 'react'
 import login from "../assets/login.jpg";
+import { Link } from 'react-router-dom';
 
 const Loginpage = () => {
     return (
-        <div className='flex min-h-screen  gap-5 w-screen  justify-center items-center'>
+        <div className='relative flex min-h-screen'>
+
+            <Link to="/navbar">
+                <button className='absolute top-2 right-10 bg-blue-600 text-white px-2 rounded max-lg:right-2'>HOME</button>
+            </Link>
+
             {/* LEFT CONTENT */}
-           <div className='w-2/3  h-screen max-lg:hidden'>
+            <div className='w-7/12  h-screen max-lg:hidden'>
                 <img src={login} className='w-full h-full  object-cover object-center' />
             </div>
 
@@ -14,9 +20,9 @@ const Loginpage = () => {
 
 
             {/* RIGHT CONTENT */}
-            <div className='space-y-10  bg-white border  rounded-2xl p-8 shadow-2xl w-2/4 flex-col  justify-center items-center mr-5 max-lg:w-150 max-lg:m-5'>
+            <div className='space-y-10  bg-white border  rounded-2xl p-8 shadow-2xl w-5/12   m-9  max-lg:w-150 max-lg:m-5'>
                 {/* top part */}
-                <div className='space-y-3'>
+                <div className='space-y-3 pt-9  '>
                     <h1 className='text-5xl text-blue-500'>Login</h1>
                     <p>Welcome! Login to get amazing discounts and offers only for you</p>
                 </div>
