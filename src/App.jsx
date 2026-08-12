@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Navbar from './Components/navbar.jsx'
 import Reletive from './Components/reletive.jsx'
@@ -19,28 +19,46 @@ import Signup from './Components/signup.jsx'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <> 
-    {/* <Navbar/>     */}
     {/* <Reletive/> */}
     {/* <Bell/> */}
     {/* <Login/> */}
-    {/* <Img/> */}
-    {/* <Newnavbar/> */}
-    {/* <Box/> */}
-    {/* <Transition/> */}
-    {/* <Pronavbar/> */}
-    {/* <Selfnavbar/> */}
-    {/* <Megamenu/>/ */}
-    {/* <Responsive/>*/}
-    {/* <Selfmegamenu/> */}
-    {/* <Loginpage/> */}
     {/* <Screencheck/> */}
-    <Signup/>
-    </>
-  )
+    {/* <Transition/> */}
+    {/* <Box/> */}
+    {/* <Img/> */}
+    {/* <Responsive/>*/}      {/*  normal responsive  */}
+    {/* <Navbar/>*/}          {/*  navbar with megamenu */}
+    {/* <Newnavbar/> */}      {/*  navbar with dropdown */}
+    {/* <Pronavbar/> */}      {/*  navbar with dropdown big */}
+
+
+
+    {/* <Selfnavbar/> */}     {/*  self created navbar with simple dropdown */}
+    {/* <Selfmegamenu/> */}   {/*  self created responsive navbar */}
+    {/* <Loginpage/> */}      {/* Responsive signin page  */}
+    {/* <Signup/> */}         {/* Responsive signup page */}
+
+
+
+
+
+
+
+    <Routes>
+      <Route path="/" element={<h1>home page</h1>}/>
+
+      <Route path="/navbar" element={<Selfmegamenu />} />
+
+      <Route path="/login" element={<Loginpage />} />
+
+      <Route path="/Signup" element={<Signup />} />
+    </Routes>
+    </>  
+)
 }
 
 export default App

@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { Menu } from 'lucide-react'
 import React, { useState } from 'react'
+
 
 
 
@@ -9,7 +11,7 @@ const Selfmegamenu = () => {
 
 
     return (
-        <>
+        <>  
             <div className='bg-black  text-white flex justify-between px-3 py-4'>
                 <div className='flex items-center gap-3' >
                     <img src="src/assets/orange.png" className='w-10 h-10 rounded-full  hover:text-amber-600'></img>
@@ -65,8 +67,12 @@ const Selfmegamenu = () => {
 
 
                 <div className='py-2 flex gap-3 max-lg:hidden'>
-                    <button className='hover:bg-yellow-300 hover:border-black border hover:text-black border-amber-600 px-3 rounded-2xl'>Sign Up</button>
-                    <button className='hover:bg-yellow-300  hover:border-black border hover:text-black border-amber-600 rounded-2xl px-3'>Sign In</button>
+                    <Link to="/signup">
+                        <button className='hover:bg-yellow-300 hover:border-black border hover:text-black border-amber-600 px-3 rounded-2xl'>Sign Up</button>
+                    </Link>
+                    <Link to="/login">
+                        <button className='hover:bg-yellow-300  hover:border-black border hover:text-black border-amber-600 rounded-2xl px-3'>Sign In</button>
+                    </Link>
                 </div>
 
 
@@ -84,9 +90,9 @@ const Selfmegamenu = () => {
             {
                 ismenuOpen && (
                     <div className='lg:hidden flex flex-col gap-10 overflow-x-hidden mt-20'>
-                        <div className='flex flex-col space-y-12 text-amber-600'>
+                        <div className='flex flex-col space-y-12  text-amber-600 '>
 
-                            <a href="#" className='bg-black block bg-black text-center'>HOME</a>
+                            <a href="#" className='bg-black bg-text-center  justify-center'>HOME</a>
 
                             <div className='relative group'>
                                 <a href="#" className='bg-black block w-full text-center'>SERVICE</a>
@@ -105,8 +111,11 @@ const Selfmegamenu = () => {
                         </div>
 
                         <div className='flex flex-col gap-4 items-center'>
+
                             <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30  '>Sign up</button>
-                            <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30'>Sign in</button>  
+
+
+                            <button className='text-black border-2 border-amber-600 rounded-2xl px-4 bg-yellow-500 hover:bg-yellow-300 w-30'>Sign in</button>
                         </div>
                     </div>
                 )}
