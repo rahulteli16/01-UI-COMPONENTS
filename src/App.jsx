@@ -16,6 +16,9 @@ import Selfmegamenu from './selfmegamenu.jsx'
 import Loginpage from './Components/loginpage.jsx'
 import Screencheck from './Components/screencheck.jsx'
 import Signup from './Components/signup.jsx'
+import Heropage from "./Components/heropage.jsx"
+import Nikenavbar from "./Components/nikenavbar.jsx";
+import Footer from "./Components/footer.jsx";
 
 
 function App() {
@@ -41,7 +44,7 @@ function App() {
     {/* <Selfmegamenu/> */}   {/*  self created responsive navbar */}
     {/* <Loginpage/> */}      {/* Responsive signin page  */}
     {/* <Signup/> */}         {/* Responsive signup page */}
-
+    {/* <Heropage/> */}
 
 
 
@@ -49,13 +52,18 @@ function App() {
 
 
     <Routes>
-      <Route path="/" element={<h1>home page</h1>}/>
+      <Route path="/" element={<Heropage/>}/>
 
       <Route path="/navbar" element={<Selfmegamenu />} />
 
       <Route path="/login" element={<Loginpage />} />
 
       <Route path="/signup" element={<Signup />} />
+
+      <Route path="/nikenavbar" element={<Nikenavbar/>}/>
+
+      <Route path="/nikefooter" element={<Footer/>}/>
+
     </Routes>
     </>  
 )

@@ -12,7 +12,7 @@ const Signup = () => {
 
 
             {/* left part */}
-            <div className='w-7/12 h-screen max-lg:hidden'>
+            <div className='w-7/12 h-screen max-lg:hidden flex justify-center items-center'>
                 <img src={Dark} alt="sign up img" className='h-full object-cover' />
             </div>
 
