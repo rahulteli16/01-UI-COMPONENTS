@@ -17,8 +17,6 @@ const Loginpage = () => {
 
 
 
-
-
             {/* RIGHT CONTENT */}
             <div className='space-y-10  bg-white border  rounded-2xl p-8 shadow-2xl w-5/12   m-9  max-lg:w-150 max-lg:m-5'>
                 {/* top part */}

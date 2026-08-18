@@ -16,6 +16,7 @@ import Selfmegamenu from './selfmegamenu.jsx'
 import Loginpage from './Components/loginpage.jsx'
 import Screencheck from './Components/screencheck.jsx'
 import Signup from './Components/signup.jsx'
+import Backgraound from "./Components/backgraound.jsx";
 
 
 function App() {
@@ -56,6 +57,8 @@ function App() {
       <Route path="/login" element={<Loginpage />} />
 
       <Route path="/signup" element={<Signup />} />
+
+      <Route path="/backgraound" element={<Backgraound />} />
     </Routes>
     </>  
 )
