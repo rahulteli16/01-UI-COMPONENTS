@@ -1,32 +1,31 @@
 import React from 'react'
-import Dark from "../assets/dark.jpg"
+import dark from "../assets/dark.jpg"
 import Navbar from './navbar'
 import { Link } from 'react-router-dom'
 
 const Signup = () => {
     return (
-        <div className='relative flex min-h-screen  justify-center items-center '>
+
+
+
+
+        <div style={{ backgroundImage : `url(${dark})`}} className='min-h-screen flex justify-center items-center bg-cover bg-center'>
+t 
+
+        <div className='relative flex min-h-screen w-full  justify-center items-center '>
             <Link to="/navbar">
                 <button className='absolute top-8 right-10 bg-green-700 text-white px-2 rounded'>HOME</button>
             </Link>
 
-
-            {/* left part */}
-            <div className='w-7/12 h-screen max-lg:hidden'>
-                <img src={Dark} alt="sign up img" className='h-full object-cover' />
-            </div>
-
-
-
             {/* right part */}
-            <div className='w-5/12 max-lg:w-full flex flex-col space-y-10 p-10 items-center justify-center border-2 shadow-2xl rounded-2xl m-6 '>
+            <div className='w-5/12 max-lg:w-full flex flex-col space-y-10 p-10 items-center justify-center border-2 shadow-2xl rounded-2xl m-6 bg-black/60 text-white'>
 
 
 
                 {/* top part */}
                 <div className='space-y-2'>
-                    <h1 className='text-4xl text-green-700'>Create an account</h1>
-                    <h4>Already have an accunt? <a href="#">Log in</a></h4>
+                    <h1 className='text-5xl text-green-100 font-bold'>Create an account</h1>
+                    <h4 className='text-xl text-green-100'>Already have an accunt? <a href="#">Log in</a></h4>
                 </div>
 
 
@@ -51,15 +50,17 @@ const Signup = () => {
 
                 {/* bottom part */}
                 <div className='flex-col  items-center space-y-2'>
-                    <button className='bg-green-900 text-amber-50 w-full rounded-2xl py-1 hover:scale-105 transition-all duration-1000'>Create Account</button>
+                    <button className='bg-green-300 text-black w-full rounded-2xl py-1 hover:scale-105 transition-all duration-1000'>Create Account</button>
                     <p className='flex justify-center'>-------OR Register With------</p>
 
                     <div className='flex justify-between gap-3'>
-                        <a href="https://google.com" className='bg-green-700  rounded px-15 py-1 hover:scale-105 text-amber-50'>Google</a>
-                        <a href="apple" className='bg-green-700 rounded px-15 py-1 hover:scale-105 text-amber-50'>Apple</a>
+                        <a href="https://google.com" className='bg-green-300  rounded px-15 py-1 hover:scale-105 text-black'>Google</a>
+                        <a href="apple" className='bg-green-300 rounded px-15 py-1 hover:scale-105 text-black'>Apple</a>
                     </div>
                 </div>
             </div>
+
+        </div>
 
         </div>
     )
