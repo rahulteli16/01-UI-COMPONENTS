@@ -17,6 +17,8 @@ import Loginpage from './Components/loginpage.jsx'
 import Screencheck from './Components/screencheck.jsx'
 import Signup from './Components/signup.jsx'
 import Backgraound from "./Components/backgraound.jsx";
+import Imggallery from "./Components/imggallery.jsx";
+import FAQ from "./Components/FAQ.jsx";
 
 
 function App() {
@@ -59,6 +61,10 @@ function App() {
       <Route path="/signup" element={<Signup />} />
 
       <Route path="/backgraound" element={<Backgraound />} />
+
+      <Route path="/imggallery" element={<Imggallery />} />
+
+      <Route path="/faq" element={<FAQ />} />
     </Routes>
     </>  
 )

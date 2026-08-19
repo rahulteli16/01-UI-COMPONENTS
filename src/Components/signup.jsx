@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
     return (
 
+      <div style={{ backgroundImage : `url(${dark})`}} className='relative min-h-screen flex justify-center items-center bg-cover bg-center'>
 
 
+        <div className='absolute inset-0    '></div>
+        
 
-        <div style={{ backgroundImage : `url(${dark})`}} className='min-h-screen flex justify-center items-center bg-cover bg-center'>
-t 
 
         <div className='relative flex min-h-screen w-full  justify-center items-center '>
             <Link to="/navbar">
@@ -67,3 +68,7 @@ t
 }
 
 export default Signup
+
+
+
+

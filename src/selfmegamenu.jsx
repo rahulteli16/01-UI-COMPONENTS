@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Menu } from 'lucide-react'
 import React, { useState } from 'react'
+import { CiSearch } from "react-icons/ci";
+import { MdOutlineKeyboardVoice } from "react-icons/md";
 
 
 
@@ -12,7 +14,7 @@ const Selfmegamenu = () => {
 
     return (
         <>
-            <div className='bg-black  text-white flex justify-between px-3 py-4'>
+            <div className='bg-black  text-white flex justify-between px-3  py-4'>
                 <div className='flex items-center gap-3' >
                     <img src="src/assets/orange.png" className='w-10 h-10 rounded-full  hover:text-amber-600'></img>
                     <div className='hover:text-amber-600'>
@@ -20,6 +22,23 @@ const Selfmegamenu = () => {
                         <p >Web Solutions</p>
                     </div>
                 </div>
+
+
+
+
+        <div className="relative flex items-center w-95">
+        <CiSearch className="absolute text-black left-2" />
+       
+        <input type="text" placeholder="Search result" className="bg-white text-black outline-none rounded-2xl w-full pl-9 pr-9 py-2"/>
+       
+        <MdOutlineKeyboardVoice className="absolute text-black right-2"/>
+        </div>
+
+
+
+
+
+
 
                 <div className='flex gap-3 py-3 max-lg:hidden'>
                     <h1 className='hover:text-amber-600'>Home</h1>
