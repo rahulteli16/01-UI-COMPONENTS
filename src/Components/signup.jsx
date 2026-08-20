@@ -26,6 +26,7 @@ const Signup = () => {
 
 
 
+
             {/* right part */}
             <div className='w-5/12 max-lg:w-full flex flex-col space-y-10 p-10 items-center justify-center border-2 shadow-2xl rounded-2xl m-6 bg-black/60 text-white'>
 
