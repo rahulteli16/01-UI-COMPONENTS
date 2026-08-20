@@ -18,6 +18,14 @@ const Signup = () => {
                 <button className='absolute top-8 right-10 bg-green-700 text-white px-2 rounded'>HOME</button>
             </Link>
 
+
+            {/* left part */}
+            <div className='w-7/12 h-screen max-lg:hidden flex justify-center items-center'>
+                <img src={dark} alt="sign up img" className='h-full object-cover' />
+            </div>
+
+
+
             {/* right part */}
             <div className='w-5/12 max-lg:w-full flex flex-col space-y-10 p-10 items-center justify-center border-2 shadow-2xl rounded-2xl m-6 bg-black/60 text-white'>
 
