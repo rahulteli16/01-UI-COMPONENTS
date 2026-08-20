@@ -19,6 +19,7 @@ import Signup from './Components/signup.jsx'
 import Backgraound from "./Components/backgraound.jsx";
 import Imggallery from "./Components/imggallery.jsx";
 import FAQ from "./Components/FAQ.jsx";
+import Contact from "./Components/contact.jsx";
 
 
 function App() {
@@ -65,6 +66,8 @@ function App() {
       <Route path="/imggallery" element={<Imggallery />} />
 
       <Route path="/faq" element={<FAQ />} />
+
+      <Route path="/contactp" element={<Contact />} />
     </Routes>
     </>  
 )
